@@ -308,7 +308,7 @@ document.write(`
 </div>
 <ul class="simple">
 <li><p><strong>Prompt management</strong>. You can use functions with the <code class="docutils literal notranslate"><span class="pre">&#64;outlines.text.prompt</span></code> decorator. “Prompt functions” use the <a class="reference external" href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja templating language</a> to render the prompt written in the docstring. We also added a few filters to help with common worflows, like building agents. Of course, for simple prompts, you can also use Python strings directly.</p></li>
-<li><p><strong>Generative model integration</strong>. You can use text completion models from OpenAI and HuggingFace, but models are not limited to text.</p></li>
+<li><p><strong>Generative model integration</strong>. You can use text completion models from OpenAI and Hugging Face, but models are not limited to text.</p></li>
 <li><p><strong>Controlled generation</strong>. The <code class="docutils literal notranslate"><span class="pre">stop_at</span></code> keyword arguments allows to define when the generation should be stopped. Outlines includes more options to control the generation; these happen on a token basis, saving time and costs.</p></li>
 <li><p><strong>Sampling</strong>. Outlines exclusively generates sequences using sampling. You can generate many samples with one call.</p></li>
 <li><p><strong>Batching</strong>. Models can take a list of prompt as input and generate completions in parallel.</p></li>
