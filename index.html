@@ -366,7 +366,7 @@ document.write(`
 <span class="sd">    &quot;&quot;&quot;</span>
 
 
-<span class="k">def</span> <span class="nf">agent</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span> <span class="n">goals</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">agent</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span> <span class="n">goals</span><span class="p">,</span> <span class="n">tools</span><span class="p">):</span>
    <span class="n">complete</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">text_completion</span><span class="o">.</span><span class="n">hf</span><span class="p">(</span><span class="s2">&quot;sshleifer/tiny-gpt2&quot;</span><span class="p">)</span>
    <span class="n">prompt</span> <span class="o">=</span> <span class="n">agent_prompt</span><span class="p">(</span><span class="n">objective</span><span class="p">,</span> <span class="n">goals</span><span class="p">,</span> <span class="n">tools</span> <span class="p">,</span> <span class="n">command_response</span><span class="p">)</span>
    <span class="n">answer</span> <span class="o">=</span> <span class="n">complete</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
